@@ -1,0 +1,191 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+body {
+    background-color: rgb(205, 255, 212);
+    width: 800px;
+    margin: 20px auto;
+}
+
+nav {
+    background: #444;
+    padding: 0.2rem 2rem;
+    height: 60px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    font-size: 32px;
+    display: flex;
+}
+
+nav a {
+    padding: 10px;
+    color: #fff;
+    text-decoration: none;
+}
+
+nav .current>a {
+    color: yellow;
+}
+
+nav ul li a button {
+    font-size: 24px;
+    border-radius: 2px;
+    float: right;
+    background-color: rgb(133, 150, 103);
+    margin-top: 5px;
+}
+
+h1 {
+    font-size: 30px;
+    text-align: center;
+    margin: 5px;
+    text-shadow: 1px 1px lightpink;
+}
+
+.header-tag {
+    font-size: 24px;
+    margin: 5px auto;
+    text-decoration: darkorange;
+    text-shadow: darkgoldenrod;
+    width: 80%;
+}
+
+.header-tag:hover {
+    background-color: darkkhaki;
+}
+
+video {
+    height: 400px;
+    width: 600px;
+    border-radius: 5px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.video-controls {
+    height: 40px;
+    margin: 0 auto;
+    font-size: 1rem;
+    width: 80%;
+}
+
+.video-controls button {
+    background-color: rgb(173, 145, 50)w;
+    height: 25px;
+    margin: 10px 10px;
+    font-size: larger;
+    border-radius: 5px;
+}
+
+.video-controls button:hover {
+    background-color: rgb(236, 184, 14);
+}
+
+canvas {
+    display: flex;
+    margin: 5px auto;
+}
+
+.filter-name {
+    background: #795548;
+    padding: 2px;
+    display: inline-block;
+    color: white;
+    width: 100px;
+    height: 30px;
+    border-radius: 3px;
+    text-align: center;
+    padding-top: 8px;
+}
+
+.filter-buttons {
+    margin: 5px auto;
+    width: 70%;
+    height: 100px;
+}
+
+.filter-group {
+    display: inline-block;
+    margin: 10px auto;
+}
+
+.filter-group .fliter-name {
+    padding-top: 5px;
+}
+
+.filter-buttons button {
+    border: none;
+    color: white;
+    font-family: "Lato";
+    padding: 8px 12px;
+    border-radius: 4px;
+    height: 30px;
+    font-size: 1em;
+    cursor: pointer;
+    background: #ff5722;
+}
+
+.filter-group .btn-save {
+    background: #009688;
+}
+
+.filter-group button:hover {
+    background: #795548;
+    cursor: pointer;
+}
+
+.filter-group .btn-reset {
+    background: #f44336;
+}
+
+@media screen and (max-width: 640px) and (min-width: 360px) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        outline: none;
+    }
+    body {
+        width: 640px;
+        margin: 20px auto;
+    }
+    nav {
+        width: 100%;
+    }
+    h1 {
+        width: 75%;
+        margin: 0 40px;
+    }
+    .header-tag {
+        width: 70%;
+        font-size: 26px;
+        margin: 0 40px;
+    }
+    video {
+        height: 400px;
+        width: 500px;
+        margin: 0 40px;
+    }
+    .video-controls {
+        height: 80px;
+        margin: 5px auto;
+        width: 80%;
+    }
+    canvas {
+        margin: 10px 40px;
+        width: 80%;
+        border-radius: 5px;
+    }
+    .filter-buttons {
+        margin: 5px auto;
+        width: 70%;
+        height: 150px;
+    }
+}

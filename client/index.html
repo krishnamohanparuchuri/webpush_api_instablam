@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- linking the manifest json file -->
+    <link rel="manifest" href="manifest.json">
+
+    <!-- camanjs cdn scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/camanjs/4.1.2/caman.full.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js"></script>
+    <title>Webpush Notifications</title>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li class="current">
+                <a href="index.html">Home</a>
+            </li>
+            <li>
+                <a href="about.html">About</a>
+            </li>
+            <li>
+                <a href="/subscribe" id="subscribeBtn"><button> Subscribe </button></a>
+            </li>
+
+        </ul>
+    </nav>
+    <h1> Webpush Notifications For Instablam app</h1>
+
+    <header>
+        <h1>MediaCapture, MediaRecorder and Streams API<br> with Webpush Notifications using Service workers</h1>
+    </header>
+    <main>
+        <p class="header-tag">Accessing the webcam and capturing the image from the webcam</p>
+        <video controls></video>
+
+        <p class="video-controls"><button id="btnStart">START RECORDING</button>
+            <button id="btnStop">STOP RECORDING</button>
+            <button id="btnCapture">CAPTURE IMAGE</button></p>
+
+        <canvas id="photo" width="400" height="300"></canvas>
+        <!-- <img src="" id="photo" style="width: 75%;" /> -->
+        <!-- <div class="buttons1">
+            <label for="hue">Hue</label>
+            <input id="hue" name="hue" type="range" min="0" max="300" value="0">
+            <label for="contrast">Contrast</label>
+            <input id="contrast" name="contrast" type="range" min="-20" max="20" value="0">
+        </div>
+        <div class="buttons2">
+            <label for="vibrance">Vibrance</label>
+            <input id="vibrance" name="vibrance" type="range" min="0" max="400" value="0">
+            <label for="sepia">Sepia</label>
+            <input id="sepia" name="sepia" type="range" min="0" max="100" value="0">
+        </div> -->
+
+        <div class="filter-buttons">
+            <div class="filter-group">
+                <button id="brightness-dec">-</button>
+                <span class="filter-name">Brightness</span>
+                <button id="brightness-inc">+</button>
+            </div>
+            <div class="filter-group">
+                <button id="contrast-dec">-</button>
+                <span class="filter-name">Contrast</span>
+                <button id="contrast-inc">+</button>
+            </div>
+            <div class="filter-group">
+                <button id="noise-dec">-</button>
+                <span class="filter-name">Noise</span>
+                <button id="noise-inc">+</button>
+            </div>
+
+            <div class="filter-group">
+                <button id="sepia-dec">-</button>
+                <span class="filter-name">Sepia</span>
+                <button id="sepia-inc">+</button>
+            </div>
+            <div class="filter-group">
+                <button id="hue-dec">-</button>
+                <span class="filter-name">Hue</span>
+                <button id="hue-inc">+</button>
+            </div>
+            <div class="filter-group">
+                <button id="resetBtn" class="btn-reset">Reset Photo</button>
+                <a href="#" id="saveBtn"><button class="btn-save">Save Image</button></a>
+            </div>
+        </div>
+        <video id="vid2" controls></video>
+        <script src="./js/client.js"></script>
+</body>
+
+</html>
